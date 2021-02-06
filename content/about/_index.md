@@ -8,4 +8,4 @@ The Game Cinematographer Society started in 2021 as an invite-only group, with a
 
 Members span the range from Cinematics Directors, Lighting Artists, Environment Artists, Directors of Photography, and, of course, Cinematographers.
 
-The group is newly-founded and thus still assembling rules and operating procedures. If you're interested in knowing more or joining, please email us <a href="mailto:ryan@gcsoc.org">here</a>.
+The group is newly-founded and thus still assembling rules and operating procedures. We're currently not looking to expand our membership just yet, but if you have questions or believe you are a perfect fit for such a group, please email us <a href="mailto:ryan@gcsoc.org">here</a>.

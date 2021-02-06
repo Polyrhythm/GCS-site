@@ -77,7 +77,7 @@ image = "#"
 
 # blog
 [params.blog]
-heading = "Interested in joining? Find out <a href=\"about\">who we are</a>."
+heading = "Interesting in knowng more? Find out <a href=\"about\">who we are</a>."
 
 # call to action
 [params.call_to_action]
