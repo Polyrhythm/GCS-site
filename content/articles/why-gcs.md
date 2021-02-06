@@ -2,7 +2,7 @@
 title: "On starting the GCS"
 date: 2021-02-06T16:55:10+09:00
 draft: false
-image : "images/ryan-profile.jpg"
+image : "/images/ryan-profile.jpg"
 author: ["Ryan Jones"]
 categories: ["Article"]
 tags: ["blog", "article"]
