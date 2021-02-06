@@ -1,7 +1,7 @@
 baseURL = ""
 languageCode = "en-us"
 title = "Game Cinematographer Society"
-theme = "twenty-twenty"
+theme = "gcs-theme"
 
 # post pagination
 paginate = "6"

@@ -1,0 +1,3 @@
+[submodule "themes/gcs-theme"]
+	path = themes/gcs-theme
+	url = git@github.com:Polyrhythm/gcs-theme.git

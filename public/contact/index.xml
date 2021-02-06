@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Contact on Game Cinematographer Society</title>
-    <link>gcsoc.org/contact/</link>
+    <link>/contact/</link>
     <description>Recent content in Contact on Game Cinematographer Society</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Feb 2021 18:16:43 +0900</lastBuildDate><atom:link href="gcsoc.org/contact/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Feb 2021 18:16:43 +0900</lastBuildDate><atom:link href="/contact/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

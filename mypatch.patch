@@ -1,0 +1,213 @@
+diff --git a/assets/css/style.css b/assets/css/style.css
+index cb3e0c8..f3be5c7 100644
+--- a/assets/css/style.css
++++ b/assets/css/style.css
+@@ -126,7 +126,7 @@ html {
+ }
+ 
+ body {
+-	background: #f5efe0;
++	background: #eee8d6;
+ 	box-sizing: border-box;
+ 	color: #000;
+ 	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+@@ -2571,7 +2571,8 @@ h2.entry-title {
+ 
+ .singular .featured-media-inner {
+ 	position: relative;
+-	left: calc(50% - 50vw);
++	display: flex;
++	justify-content: center;
+ 	width: 100vw;
+ }
+ 
+diff --git a/exampleSite/config.toml b/exampleSite/config.toml
+index 59b4d26..877a2bd 100644
+--- a/exampleSite/config.toml
++++ b/exampleSite/config.toml
+@@ -106,11 +106,9 @@ image = "images/2020-square-1.png"
+ 
+ # footer
+ [params.footer]
+-title = "About This Site"
+-content = "This may be a good place to introduce yourself and your site or include some credits."
+-address = "123 Main Street <br> New York, NY 10001"
+-hours = "Monday–Friday: 9:00AM–5:00PM <br> Saturday & Sunday: 11:00AM–3:00PM"
+-copyright = "Copyright &copy; 2020 a hugo theme by [themefisher](https://themefisher.com) ported from [WordPress Twenty Twenty](https://github.com/WordPress/twentytwenty)"
++title = "About The GCS"
++content = "Dedicated to advancing cinematography within the game industry."
++copyright = "Copyright &copy; 2021 Game Cinematographer Society"
+ 
+ ############################# social site ########################
+ [params.social]
+diff --git a/layouts/_default/list.html b/layouts/_default/list.html
+index 771f380..38a80ab 100644
+--- a/layouts/_default/list.html
++++ b/layouts/_default/list.html
+@@ -1,5 +1,6 @@
+ {{ define "main" }}
+ 
++<!--
+ <header class="archive-header has-text-align-center header-footer-group">
+ 	<div class="archive-header-inner section-inner medium">
+ 		<h1 class="archive-title"><span class="color-accent">
+@@ -11,6 +12,7 @@
+ 				:</span> <span class="vcard">{{ .Title }}</span></h1>
+ 	</div>
+ </header>
++-->
+ 
+ {{ range .Data.Pages }}
+ {{ .Render "post" }}
+diff --git a/layouts/_default/post.html b/layouts/_default/post.html
+index dfc9ebb..ec38d47 100644
+--- a/layouts/_default/post.html
++++ b/layouts/_default/post.html
+@@ -37,6 +37,7 @@
+ 							{{ .PublishDate.Format "January 02, 2006"}}
+ 						</span>
+ 					</li>
++					<!--
+ 					<li class="post-comment-link meta-wrapper">
+ 						<span class="meta-icon">
+ 							<svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg"
+@@ -48,15 +49,16 @@
+ 							<a href="{{.Permalink}}#comments">Comments<span class="screen-reader-text"> on
+ 									{{ .Title }}</span></a> </span>
+ 					</li>
++				-->
+ 				</ul>
+ 			</div><!-- .post-meta-wrapper -->
+ 		</div><!-- .entry-header-inner -->
+ 	</header><!-- .entry-header -->
+ 	<figure class="featured-media-">
+ 		<div class="featured-media-inner section-inner medium">
+-			<img width="1200" height="769"
++			<img width="600"
+ 				src="{{ .Params.image | absURL }}"
+-				class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" sizes="(max-width: 1200px) 100vw, 1200px">
++				class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" sizes="(max-width: 600px) 100vw, 600px">
+ 		</div><!-- .featured-media-inner -->
+ 	</figure><!-- .featured-media -->
+ 	<div class="post-inner thin ">
+diff --git a/layouts/_default/single.html b/layouts/_default/single.html
+index 10947a6..b522f98 100644
+--- a/layouts/_default/single.html
++++ b/layouts/_default/single.html
+@@ -42,15 +42,20 @@
+             </span>
+           </li>
+           <li class="post-comment-link meta-wrapper">
++            <!--
+             <span class="meta-icon">
+               <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                 width="19" height="19" viewbox="0 0 19 19">
+                 <path
+                   d="M9.43016863,13.2235931 C9.58624731,13.094699 9.7823475,13.0241935 9.98476849,13.0241935 L15.0564516,13.0241935 C15.8581553,13.0241935 16.5080645,12.3742843 16.5080645,11.5725806 L16.5080645,3.44354839 C16.5080645,2.64184472 15.8581553,1.99193548 15.0564516,1.99193548 L3.44354839,1.99193548 C2.64184472,1.99193548 1.99193548,2.64184472 1.99193548,3.44354839 L1.99193548,11.5725806 C1.99193548,12.3742843 2.64184472,13.0241935 3.44354839,13.0241935 L5.76612903,13.0241935 C6.24715123,13.0241935 6.63709677,13.4141391 6.63709677,13.8951613 L6.63709677,15.5301903 L9.43016863,13.2235931 Z M3.44354839,14.766129 C1.67980032,14.766129 0.25,13.3363287 0.25,11.5725806 L0.25,3.44354839 C0.25,1.67980032 1.67980032,0.25 3.44354839,0.25 L15.0564516,0.25 C16.8201997,0.25 18.25,1.67980032 18.25,3.44354839 L18.25,11.5725806 C18.25,13.3363287 16.8201997,14.766129 15.0564516,14.766129 L10.2979143,14.766129 L6.32072889,18.0506004 C5.75274472,18.5196577 4.89516129,18.1156602 4.89516129,17.3790323 L4.89516129,14.766129 L3.44354839,14.766129 Z" />
+               </svg> </span>
++            -->
+             <span class="meta-text">
++              <!--
+               <a href="{{.Permalink}}#comments">Comments<span class="screen-reader-text"> on
+-                  {{ .Title }}</span></a> </span>
++                  {{ .Title }}</span></a>
++              -->
++            </span>
+           </li>
+         </ul>
+       </div><!-- .post-meta-wrapper -->
+@@ -59,9 +64,9 @@
+   {{if .Params.Image }}
+   <figure class="featured-media">
+     <div class="featured-media-inner section-inner medium">
+-      <img width="1200" height="769" src="{{ .Params.image | absURL }}"
++      <img width="600" src="{{ .Params.image | absURL }}"
+         class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="{{.Title }}"
+-        sizes="(max-width: 1200px) 100vw, 1200px">
++        sizes="(max-width: 600px) 100vw, 600px">
+     </div><!-- .featured-media-inner -->
+   </figure><!-- .featured-media -->
+   {{end}}
+diff --git a/layouts/index.html b/layouts/index.html
+index e45133f..bc638c4 100644
+--- a/layouts/index.html
++++ b/layouts/index.html
+@@ -9,6 +9,7 @@
+   </header>
+   {{ end }}
+ 
++  <!--
+   {{ with.Site.Params.banner.image}}
+   <figure class="featured-media">
+     <div class="featured-media-inner section-inner">
+@@ -18,6 +19,7 @@
+     </div>
+   </figure>
+   {{end}}
++  -->
+ 
+   <div class="post-inner thin">
+     <div class="entry-content">
+diff --git a/layouts/partials/footer.html b/layouts/partials/footer.html
+index b94ba75..d0ec50b 100644
+--- a/layouts/partials/footer.html
++++ b/layouts/partials/footer.html
+@@ -2,7 +2,9 @@
+   <div class="footer-inner section-inner">
+     <div class="footer-top has-social-menu">
+       <nav aria-label="Social links" class="footer-social-wrapper">
++        <!--
+         {{partial "social.html" .}}
++        -->
+       </nav>
+     </div><!-- .footer-top -->
+     {{ with .Site.Params.footer }}
+@@ -18,6 +20,7 @@
+             </div>
+           </div>
+         </div>
++        <!--
+         <div class="footer-widgets column-two grid-item">
+           <div class="widget widget_text">
+             <div class="widget-content">
+@@ -29,6 +32,7 @@
+             </div>
+           </div>
+         </div>
++      -->
+       </div><!-- .footer-widgets-wrapper -->
+     </aside><!-- .footer-widgets-outer-wrapper -->
+     {{ end }}
+diff --git a/layouts/partials/social.html b/layouts/partials/social.html
+index bffb519..40176ad 100644
+--- a/layouts/partials/social.html
++++ b/layouts/partials/social.html
+@@ -1,4 +1,5 @@
+ <ul class="social-menu reset-list-style social-icons fill-children-current-color">
++  <!--
+   {{ with .Site.Params.social.yelp }}
+   <li id="menu-item-37" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37"><a
+       href="{{ . | safeURL }}"><span class="screen-reader-text">Yelp</span><svg class="svg-icon" aria-hidden="true"
+@@ -38,6 +39,7 @@
+         </path>
+       </svg></a></li>
+   {{ end }}
++  -->
+ 
+   {{ with .Site.Params.social.email }}
+   <li id="menu-item-41" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41"><a
+@@ -49,6 +51,7 @@
+       </svg></a></li>
+   {{ end }}
+ 
++  <!--
+   {{ with .Site.Params.social.linkedin }}
+   <li id="menu-item-42" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-42"><a
+       href="{{ . | safeURL }}"><span class="screen-reader-text">LinkedIn</span><svg class="svg-icon" aria-hidden="true"
+@@ -58,4 +61,5 @@
+         </path>
+       </svg></a></li>
+   {{ end }}
++  -->
+ </ul>
+\ No newline at end of file
