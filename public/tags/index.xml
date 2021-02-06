@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Game Cinematographer Society</title>
+    <link>gcsoc.org/tags/</link>
+    <description>Recent content in Tags on Game Cinematographer Society</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Feb 2021 16:55:10 +0900</lastBuildDate><atom:link href="gcsoc.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>article</title>
+      <link>gcsoc.org/tags/article/</link>
+      <pubDate>Sat, 06 Feb 2021 16:55:10 +0900</pubDate>
+      
+      <guid>gcsoc.org/tags/article/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blog</title>
+      <link>gcsoc.org/tags/blog/</link>
+      <pubDate>Sat, 06 Feb 2021 16:55:10 +0900</pubDate>
+      
+      <guid>gcsoc.org/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

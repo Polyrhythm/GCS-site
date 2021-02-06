@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Articles on Game Cinematographer Society</title>
+    <link>gcsoc.org/articles/</link>
+    <description>Recent content in Articles on Game Cinematographer Society</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Feb 2021 16:58:55 +0900</lastBuildDate><atom:link href="gcsoc.org/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On starting the GCS</title>
+      <link>gcsoc.org/articles/why-gcs/</link>
+      <pubDate>Sat, 06 Feb 2021 16:55:10 +0900</pubDate>
+      
+      <guid>gcsoc.org/articles/why-gcs/</guid>
+      <description>Why start this group? There&amp;rsquo;s a lot of conversation to be had here.</description>
+    </item>
+    
+  </channel>
+</rss>
