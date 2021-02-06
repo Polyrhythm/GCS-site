@@ -1,4 +1,4 @@
-baseURL = "gcsoc.org/public"
+baseURL = "public"
 languageCode = "en-us"
 title = "Game Cinematographer Society"
 theme = "twenty-twenty"
