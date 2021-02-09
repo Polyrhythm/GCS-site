@@ -36,7 +36,7 @@ index 59b4d26..877a2bd 100644
 -copyright = "Copyright &copy; 2020 a hugo theme by [themefisher](https://themefisher.com) ported from [WordPress Twenty Twenty](https://github.com/WordPress/twentytwenty)"
 +title = "About The GCS"
 +content = "Dedicated to advancing cinematography within the game industry."
-+copyright = "Copyright &copy; 2021 Game Cinematographer Society"
++copyright = "Copyright &copy; 2021 Game Cinematography Society"
  
  ############################# social site ########################
  [params.social]
