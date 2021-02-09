@@ -102,7 +102,7 @@ image = "images/2020-square-1.png"
 [params.footer]
 title = "About the GCS"
 content = "Find out more <a href=\"../about\">here</a>"
-copyright = "Copyright &copy; 2021 Game Cinematographer Society"
+copyright = "Copyright &copy; 2021 Game Cinematography Society"
 
 
 ############################# social site ########################
